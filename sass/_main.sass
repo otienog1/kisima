@@ -1,0 +1,872 @@
+html
+	font-size: 16px
+form, input, button, textarea, label, legend
+	font-family: $montserrat
+body
+	font-family: $montserrat
+	font-size: 1rem
+	background-color: #f3f1ef
+	// background-color: lighten(khaki, 10%)
+	position: relative
+	min-height: 100vh
+	color: #666
+	// padding-top: calc(36px + 45px)
+	// background-color: #f5f8fa
+	&:not(.home)
+		padding-top: calc(36px + 45px)
+
+.display-5
+	font-size: 2.5rem
+	font-weight: 300
+	line-height: 1.1
+
+.display-6
+	font-size: 1.7rem
+	font-weight: 400
+	line-height: 1.1
+
+.display-7
+	font-size: 1.25rem
+	font-weight: 400
+	line-height: 1.1
+
+.display-8
+	font-size: 1rem
+	font-weight: 400
+	line-height: 1.1
+
+
+
+.br-3
+	border-radius: 3px
+
+.bg-white
+	background-color: $white
+
+.bg-safaricom
+	background-color: $safaricom
+
+.k-bg-primary
+	background-color: $kisima-primary
+.k-bg-secondary
+	background-color: $kisima-secondary
+.k-bg-default
+	background-color: $kisima-default
+
+.p-rel
+	position: relative
+
+.p-abs
+	position: absolute
+
+.p-fixed
+	position: fixed
+
+.logo
+	padding: .2rem
+	border-radius: 2px
+	margin-top: -3.5rem
+	background-color: $white
+	+animate(all, .2s)
+	img
+		border-radius: 2px
+		width: 60px
+
+#header
+	padding-top: 0
+
+.bx
+	box-shadow: $bx-shadow
+
+// .header-container
+// 	height: 60px
+
+.section
+	padding: 3rem 0
+	
+.recent-post-wrapper
+	height: 300px
+	overflow: hidden
+	width: 100%
+	background-color: $white
+	.recent-post-image
+		width: 100%
+		height: 177px
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center center
+		overflow: hidden
+		opacity: .9
+		background-blend-mode: luminosity
+		background-color: rgba(0,0,0,1)
+		+animate(all, .2s)
+		img
+			width: 100%
+	.recent-post-body
+		padding: .5rem 1rem
+		.entry-content
+			font-size: .8rem
+			padding-top: .5rem
+			h1, 
+			h2, 
+			h3, 
+			h4, 
+			h5, 
+			h6,
+				font-size: .95rem 
+			strong
+				font-weight: 500
+		&.has-thumb
+			margin-top: -40px
+		.recent-posts-title
+			font-size: 1.1rem
+			margin-bottom: 0
+			a
+				color: #333
+				text-decoration: none
+				transition: all .2s ease-in 0s
+				&:hover
+					color: $kisima-primary
+		.text-content
+			font-size: .8rem
+
+		.recent-post-meta
+			padding: .5rem 0
+
+.listing-taxon
+	// margin-bottom: 1.5rem
+	.tax-listing
+		overflow: hidden
+		height: 200px
+		// border-radius: 3px
+		background-color: lighten(#000, 70%)
+		.taxon-image
+			width: 100%
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: center center
+			overflow: hidden
+			// opacity: 0.9
+			background-color: black
+			background-blend-mode: normal
+			-webkit-transition: all 0.2s ease
+			-moz-transition: all 0.2s ease
+			-ms-transition: all 0.2s ease
+			-o-transition: all 0.2s ease
+			transition: all 0.2s ease
+			&:hover
+				opacity: 1
+				background-blend-mode: luminosity
+				h2.entry-title
+					color: $kisima-primary
+				.overlay
+					background-color: rgba(0,0,0,.1)
+					
+			.overlay
+				background-color: rgba(0,0,0,.3)
+				+animate(all, 300ms)
+			.entry-title
+				font-size: 1.5rem
+				color: darken($white, 15%)
+				+animate(all, 500ms)
+
+.bg-cover
+	background-position: center center
+	background-size: cover
+
+.archive
+	.recent-post-wrapper
+		height: 255px
+
+.entry-footer
+	margin-top: 2rem
+	a
+		font-size: .8rem
+		color: #ababab
+
+.recent-post-wrapper
+	.entry-footer
+		margin-top: 0
+		bottom: 0
+		// +gradient(linear, rgba(255,255,255, .1), rgba(255,255,255, 1))
+		// background: -webkit-linear-gradient(rgba(255, 255, 255, .1), $white, $white)
+		// background: -moz-linear-gradient(rgba(255, 255, 255, .1), $white, $white)
+		// background: -ms-linear-gradient(rgba(255, 255, 255, .1), $white, $white)
+		// background: -o-linear-gradient(rgba(255, 255, 255, .1), $white, $white)
+		// background: linear-gradient(rgba(255, 255, 255, .1), $white, $white)
+		left: 0
+		right: 0
+		height: 29px
+
+.adventure
+	padding-right: 0
+	padding-top: 1rem
+	// padding-left: 1rem
+	.adventure-style
+		height: 277px
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		a
+			min-height: 277px
+			text-decoration: none
+			color: white
+			.adv-wrapper
+				transition: background-color 0.3s ease 0s
+				left: .9rem
+				right: 0
+				top: .9rem
+				bottom: 0
+				position: absolute
+				z-index: 3
+				background: rgba(0,0,0,0.1) none repeat scroll 0 0
+				&.override-adv-wrapper
+					left: 0
+					top: 0
+				.adv-text-wrapper
+					padding: 30px 15px 0 25px
+					left: 0
+					position: absolute
+					bottom: 10%
+				h2
+					// font-family: $gothic
+					font-size: 30px
+					text-shadow: 0 0 1px rgba(0,0,0,.3)
+					transform: translate3d(0px,60px,0px)
+					transition: transform 0.35s ease 0s
+					font-weight: 300
+					font-size: 1.5rem
+				.see-more
+					border: 1px solid white
+					color: white
+					border-radius: 2px
+					display: inline-block
+					margin-top: 1.5em
+					opacity: 0
+					padding: 0.5em 1.5em
+					font-weight: 400
+					// font-family: $gothic
+					// text-transform: uppercase
+					transition: opacity 0.7s ease 0s
+			&:hover
+				.see-more
+					opacity: 1
+				h2
+					+transform(translate3d(0px,0px,0px))
+				.adv-wrapper
+					background-color: rgba(0,0,0,.5)
+
+.fader
+	background: rgba(0,0,0,0) linear-gradient(to bottom,rgba(255,255,255,0) 0%,white 60%) repeat scroll 0 0
+	height: 30px
+	left: 0
+	right: 0
+	position: absolute
+	bottom: 29px
+	width: 100%
+
+.section-title
+	font-size: 1.3rem
+	margin-bottom: 1rem
+
+.post-excerpt
+	margin-bottom: 1rem
+	&:hover
+		.post-body-anim
+			+animate(all, .25s)
+			margin-top: -50px
+			// -webkit-animation-name: slideUp
+			// animation-name: slideUp
+			// -webkit-animation-duration: 20s
+			// animation-timing-funtion: ease-in-out
+			// // animation-direction: alternate
+			// animation-duration: .2s
+			// -webkit-animation-fill-mode: both
+			// animation-fill-mode: both
+		.recent-post-image
+			margin-top: -10px
+			background-blend-mode: normal
+			opacity: 1
+
+.carousel-section
+	.carousel
+		p
+			margin-bottom: 0
+	
+.featured-image
+	width: 100%
+	overflow: hidden
+	img
+		width: 100%
+		vertical-align: middle
+
+.why-us
+	.title
+		font-size: 1rem
+		font-family: $gothic
+	.uo-list
+		padding-bottom: 1rem
+		list-style: none
+		// padding: 0
+		// margin: 0
+		li
+			padding: .3rem 0
+			// border-bottom: 1px solid rgba(0,0,0,.1)
+			font-size: .8rem
+
+.form-control-msg
+	display: none
+	&.input-msg
+		display: block
+		position: absolute
+		margin-bottom: -10
+		padding-left: .5rem
+		+animate(all, .2s)
+
+.has-danger
+	.form-control-msg
+		display: block
+		&.input-msg
+			margin-top: -18px
+
+.share-this
+	ul
+		margin: 0
+		margin-top: 1rem
+		padding: 0
+		list-style: none
+		li
+			display: inline-block
+			margin: 0 .2rem
+			// &:first-child
+				// border-radius: 10px
+			a
+				padding: .7rem
+				color: $white
+				text-decoration: none
+				border-radius: 50%
+				border: 1px solid rgba(0,0,0,.05)
+				// background-color: $kisima-primary
+
+.k-contact-form
+	width: 100%
+	max-width: 500px
+	padding: 50px 0
+	.form-group
+		background-color: $white
+		box-shadow: $bx-shadow
+		border-radius: 2px
+		position: relative
+		overflow: hidden
+		&::before
+			position: absolute
+			content: ''
+			display: block
+			height: 0
+			background-color: $bs-danger
+			bottom: 0
+			left: 0
+			right: 0
+			+animate(all, .2s)
+		&.has-danger
+			&:before
+				height: 2px
+.k-input
+	resize: none
+	border: none
+	padding: 1rem .5rem
+	font-size: .8rem
+	-webkit-box-shadow: none
+	-webkit-outline-shadow: none
+	&::-webkit-input-placeholder
+		text-transform: uppercase
+		color: lighten($kisima-primary, 30%)
+	&:-moz-input-placeholder
+		text-transform: uppercase
+		color: lighten($kisima-primary, 30%)
+	&::placeholder
+		text-transform: uppercase
+		color: lighten($kisima-primary, 30%)
+	&:placeholder-shown
+		text-transform: uppercase
+		color: lighten($kisima-primary, 30%)
+	&:-ms-input-placeholder
+		text-transform: uppercase
+		color: lighten($kisima-primary, 30%)
+
+.btn-k-form
+	background-color: lighten($kisima-primary, 15%)
+	border-radius: 2px
+	color: $white
+	font-size: 1rem
+	text-transform: uppercase
+	border: none
+	box-shadow: $bx-shadow
+	+animate(all, .3s)
+	cursor: pointer
+	&:hover, &:focus
+		color: #fefefe
+		background-color: darken($kisima-primary, 3%)
+
+.comments-area
+	.k-input
+		border: 1px solid rgba(0,0,0,.1)
+	.btn-k-form
+		font-size: .9rem
+
+.entry-title
+	margin-bottom: 1.5rem
+	color: #969696
+	font-weight: 500
+	font-family: $gothic
+
+.kisima-article
+	+animate(all, 1s)
+	+transform( translateY(50px) )
+	opacity: 0
+	&.reveal
+		+transform( translateY(0) )
+		opacity: 1
+
+.kisima-load-more
+	background-color: transparent
+	border: 0
+	outline: 0
+	opacity: .5
+	overflow: hidden
+	cursor: pointer
+	+animate(all, .3s)
+	&:focus,
+	&:hover,
+	&.loading
+		opacity: .8
+		background: transparent
+		border: 0
+		box-shadow: none
+	span
+		display: block
+
+.error-404
+	min-height: 52.25vh
+	padding-top: 3rem
+
+.search-field
+	font-family: $montserrat
+	border: 1px solid rgba(0,0,0,.1)
+	padding: .5rem .7rem
+	border-radius: 2px
+
+.search-submit
+	padding: .4rem 1rem
+	color: $white
+	font-family: $montserrat
+	background-color: $kisima-primary
+	border: 1px solid darken($kisima-primary, 3%)
+	box-shadow: $bx-shadow
+	border-radius: 2px
+
+.page-numbers
+	position: relative
+	display: block
+	padding: .5rem .75rem
+	margin-left: -1px
+	line-height: 1.25
+	color: #ababab
+	background-color: #fff
+	border: 1px solid #ddd
+	text-decoration: none
+	font-weight: 400
+	text-align: center
+	+animate(all, .3s)
+	&.current,
+	&:hover,
+	&:focus
+		color: #666
+		font-weight: 600
+		text-decoration: none
+		background-color: #eceeef
+		border-color: #ddd
+	&:first-child
+		border-top-left-radius: 3px
+		border-bottom-left-radius: 3px
+	&:last-child
+		border-top-right-radius: 3px
+		border-bottom-right-radius: 3px
+
+.nav-links
+	display: -webkit-box
+	display: -webkit-flex
+	display: -ms-flexbox
+	display: flex
+	padding-left: 0
+	list-style: none
+	margin: 3rem auto 0
+	box-shadow: $bx-shadow
+
+.single-post-image
+	width: 100%
+	height: 450px
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+
+.author-info
+	margin-top: -50px
+	text-align: center
+	color: #999
+	font-family: $raleway
+	// font-style: italic
+.author-avatar
+	.avatar
+		border-radius: 50%
+		border: 4px solid #f3f1ef
+
+.result-page
+	span
+		margin-right: 2rem
+
+.no-results
+	min-height: 52.2vh
+
+.top-0
+	top: 0
+
+.bottom-0
+	bottom: 0
+
+.top-50
+	top: 50%
+	transform: translateY(-50%)
+
+.left-50
+	left: 50%
+
+.left-0
+	left: 0
+
+.right-0
+	right: 0
+
+.breadcrumb
+	background-color: transparent
+	padding: 0
+	width: auto
+	.breadcrumb-item
+		font-size: .8rem
+		color: #888
+		&.active
+			color: #555
+			// font-weight: 600
+
+.single-post
+	.entry-header
+		z-index: 10
+		.entry-title
+			color: #fff
+			text-shadow: 0, 1px 1px rgba(0,0,0,.1)
+		.breadcrumb
+			.breadcrumb-item
+				color: #ccc
+				&.active
+					color: $white
+				&::before
+					color: #ccc
+					font-weight: normal
+
+.overlay
+	top: 0
+	bottom: 0
+	background-color: rgba(0,0,0,.3)
+
+.widget-title
+	&.let-us
+		&::after
+			content: ' '
+			display: block
+			width: 100%
+			background-color: #ccc
+			height: 1px
+			margin: 1rem 0
+
+.free-enquiry
+	text-decoration: none
+	margin-bottom: .5rem
+	+animate(all, 250ms)
+	&:hover
+		background-color: lighten($kisima-primary, 5%)
+
+.widget-area 
+	&.single
+		margin-top: -47px
+
+.widget_categories
+	background-color: $white
+	padding: 1rem
+	margin-bottom: 1rem
+	.widget-title
+		color: #888
+		&::after
+			content: " "
+			display: block
+			margin-top: .5rem
+			background-color: rgba(0,0,0,.05)
+			width: 100%
+			height: 1px 
+	ul
+		list-style: none
+		padding: 0
+		margin: 0
+		li
+			font-size: .7rem
+			padding: .5rem 0
+			// border-top: 1px solid rgba(0,0,0,.05)
+			a
+				font-size: .8rem
+				color: #999
+.single
+	.package-sd
+		margin-top: -45px
+
+.fa-1x
+	font-size: 1.5rem
+
+.fa-spin
+	-webkit-animation: fa-spin .8s infinite linear
+	animation: fa-spin .8s infinite linear
+.screen-reader-text
+	display: none
+
+#menu-quick-links
+	list-style: none
+	padding: 0
+	margin: 0
+	.menu-item
+		&.menu-item-has-children
+			.sub-menu
+				list-style-type: none
+				display: none
+				padding: 0
+				.menu-item
+					border: 0
+					a
+						padding: 0
+						font-weight: 400
+						&:last-child
+							padding-bottom: .3rem
+						&::before
+							content: "-"
+							margin-right: .3rem
+			&.open
+				.sub-menu
+					display: block
+		border-top: 1px solid rgba(0,0,0,.05)
+		a
+			color: #777
+			padding: .3rem 0
+			display: flex
+			text-decoration: none
+			justify-content: between
+		&.current-menu-ancestor
+			color: #333
+			font-weight: 500
+			.sub-menu
+				display: block
+		&.current-menu-item
+			a
+				color: $twitter
+				font-weight: 400
+
+.feedback-body
+	width: 0
+	height: 0
+	opacity: 0
+	overflow: hidden
+	right: 1rem
+	bottom: 4.5rem
+	border-radius: 30px
+	border: 1px solid rgba(0,0,0,.05)
+	background-color: $kisima-primary
+	padding: 1rem
+	margin-bottom: .2rem
+	+animate(all, .25s)
+	&.feedback-open
+		width: 300px
+		height: calc(275px - 3.5rem)
+		opacity: 1
+	form
+		.form-control
+			color: #888
+			border: 0
+			border-radius: 20px
+			font-size: .8rem
+			font-family: $gothic
+			margin-bottom: .5rem
+			background-color: rgba(255,255,255,.8)
+			resize: none
+		.btn
+			background-color: rgba(255,255,255,.8)
+			text-align: center
+			color: #777
+			border-radius: 20px
+			cursor: pointer
+			+animate(all, .25s)
+			&:hover
+				background-color: $vine
+				color: $white
+.feedback-icon
+	right: 1rem
+	bottom: 1rem
+	color: #666
+	text-decoration: none
+	text-align: center
+	width: 3.2rem
+	height: 3.2rem
+	background-color: $white
+	border-radius: 50%
+	padding: 1rem
+	+animate(all, .25s)
+	&:focus
+		color: #666
+		text-decoration: none
+	&.active, &:hover
+		background-color: $kisima-primary
+		color: $white
+		text-decoration: none
+
+.p-0
+	padding: 0
+
+.p
+	padding: 1rem
+	
+.px-1
+	padding: 0 .25rem	
+
+.px-2
+	padding: 0 .5rem
+
+.px-3
+	padding: 0 1rem
+
+.px-4
+	padding: 0 1.5rem
+
+.py-1
+	padding: .25rem 0
+
+.py-2
+	padding: .5rem 0
+
+.py-3
+	padding: 1rem 0
+
+.py-4
+	padding: 1.5rem 0
+
+.pt-1
+	padding-top: .25rem
+
+.pt-2
+	padding-top: .5rem
+
+.pt-3
+	padding-top: 1rem
+
+.pt-4
+	padding-top: 1.5rem
+
+.pb-1
+	padding-bottom: .25rem
+
+.pb-2
+	padding-bottom: .5rem
+
+.pb-3
+	padding-bottom: 1rem
+
+.pb-4
+	padding-bottom: 1.5rem
+
+.f-1
+	font-size: .8rem
+
+.f-2
+	font-size: .9rem
+
+.f-3
+	font-size: 1rem
+.z-1
+	z-index: 1
+
+.aligncenter
+	text-align: center
+	
+.size-full
+	width: 100%
+	margin: 1rem 0
+
+.footer
+	padding: 3rem 0 0
+	color: #ccc
+	font-size: .8rem
+	.widget
+		padding: 0 .5rem
+	.widget_recent_entries
+		a
+			color: #ccc
+	ul
+		list-style: none
+		padding: 0
+		margin: 0
+		li
+	a
+		color: $twitter
+	.last-f
+		padding: .5rem 0
+
+.map_kisima
+	height: 300px
+
+.bg-dark
+	background-color: rgba(0,0,0,.7)
+
+.pay-online
+	text-decoration: none
+	&:hover, &:focus
+		text-decoration: none
+
+.video-wrapper
+	&:hover, &:focus
+		text-decoration: none
+	.video
+		width: 100%
+		// height: 150px
+		cursor: pointer
+		&:hover
+			.play-btn
+				opacity: .2
+		.play-btn
+			display: block
+			text-shadow: 0 1px 1px rgba(0,0,0,.1)
+			width: 51px
+			height: 64px
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			opacity: 0
+			+animate(all, 500ms)
+			.fa
+				font-size: 4rem
+				text-align: center
+
+.term-women-only-safaris
+	background-color: #ffddff
+
+.social-media
+	list-style: none
+	margin: 0
+	padding: 0
+	li
+		a
+			text-decoration: none
+			color: $twitter

@@ -1,0 +1,62 @@
+.comment-list
+	list-style: none
+	padding: 0
+	.comment
+		background-color: $white
+		border: 1px solid rgba(0,0,0,.08)
+		margin-bottom: .7rem
+		border-radius: 3px
+		.media
+			padding: 1rem
+			.avatar
+				border-radius: 50%
+				margin-right: 1rem
+			.media-body
+				.comment-meta
+					color: #666
+					h4,
+						margin-bottom: 0
+					.url
+						text-decoration: none
+						color: #666
+					.comment-metadata
+						margin-bottom: 1rem
+						a
+							font-size: .8rem
+							color: #999
+							// text-decoration: none
+				.reply
+					a
+						// text-decoration: none
+						// border: 1px solid $kisima-primary
+						// background-color: 
+						border-radius: 2px
+						// padding: .5rem 1rem
+						color: #999
+	
+	.children
+		list-style: none
+		padding: 0
+		.comment
+			padding-left: calc(2rem + 64px)
+			font-size: .8rem
+			background-color: #fafcfd
+			margin-bottom: 0
+			border: 0
+			border-top: 1px solid rgba(0,0,0,.03)
+
+.comment-reply-title
+	color: #999
+	font-weight: 400
+	font-size: 1.25rem
+
+.comment-respond
+	.comment-reply-title
+		a
+			color: #999
+			font-weight: 400
+			font-size: 1rem
+
+.logged-in-as
+	a
+		color: #676

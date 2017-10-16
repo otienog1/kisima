@@ -1,0 +1,71 @@
+.hero-section
+	width: 100%
+	height: 80vh
+	overflow: hidden
+	.hero-overlay
+		top: 0
+		bottom: 0
+		left: 0
+		// background-color: rgba(60,72,13,.7)
+		background-color: rgba(255,148,0,.2)
+	.site-title
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		color: $white
+		text-shadow: 0 1px 1px $vine
+		font-family: $berkeley
+		h1
+			// color: #f4f4f4
+			color: $vine
+		h2
+			font-family: $raleway
+			font-size: 1.5rem
+			margin-top: 1.5rem
+			// color: #eee
+			color: $kisima-primary
+			text-shadow: none
+			&::after
+				content: ""
+				display: block
+				width: 100%
+				height: 2px
+				margin: 2rem auto 0
+				background-color: rgba(255,244,255,.7)
+				box-shadow: $bx-shadow
+
+.home-welcome
+	background-color: lighten(#000, 30%)
+	// background-color: $kisima-secondary
+	// padding: .5rem 0
+	.main
+		padding: 2rem 0
+		font-size: 1rem
+		.hero-title
+			font-size: 1.5rem
+			font-weight: 300
+			color: $kisima-primary
+		.learn-more
+			background-color: $kisima-primary
+			color: $white
+			text-decoration: none
+			box-shadow: $bx-shadow
+			border-radius: 2px
+			+animate(all, .3s)
+			&:hover
+				background-color: darken($kisima-primary, 5%)
+				color: #efefef
+
+.feedback-wrapper
+	border-top: 1px solid rgba(0,0,0,.05)
+	.feedback
+		margin-top: 1rem
+		.body
+			background-color: $white
+			font-size: .8rem
+			.icon
+				color: #eee
+				// text-shadow: 0 1px 1px rgba(0,0,0,.1)
+			.name
+				font-size: .8rem
+				font-weight: 500

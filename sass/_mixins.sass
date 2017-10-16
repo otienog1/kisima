@@ -1,0 +1,75 @@
+=animate($attr, $time)
+	-webkit-transition: $attr $time ease
+	-moz-transition: $attr $time ease
+	-ms-transition: $attr $time ease
+	-o-transition: $attr $time ease
+	transition: $attr $time ease
+
+=transform($param)
+	-webkit-transform: $param
+	-moz-transform: $param
+	-ms-transform: $param
+	-o-transform: $param
+	transform: $param
+
+=gradient($type, $from, $to)
+	background-color: #{$to}
+	background: -webkit-#{$type}-gradient($from, $to)
+	background: -moz-#{$type}-gradient($from, $to)
+	background: -ms-#{$type}-gradient($from, $to)
+	background: -o-#{$type}-gradient($from, $to)
+	background: #{$type}-gradient($from, $to)
+
+=from($device)
+	@media screen and (min-width: $device)
+	@content
+
+=until($device)
+	@media screen and (max-width: $device - 1px)
+	@content
+
+=mobile
+	@media screen and (max-width: $tablet - 1px)
+	@content
+
+=tablet
+	@media screen and (min-width: $tablet), print
+	@content
+
+=tablet-only
+	@media screen and (min-width: $tablet) and (max-width: $desktop - 1px)
+	@content
+
+=touch
+	@media screen and (max-width: $desktop - 1px)
+	@content
+
+=desktop
+	@media screen and (min-width: $desktop)
+	@content
+
+=desktop-only
+	@media screen and (min-width: $desktop) and (max-width: $widescreen - 1px)
+	@content
+
+=widescreen
+	@media screen and (min-width: $widescreen)
+	@content
+
+=widescreen-only
+	@media screen and (min-width: $widescreen) and (max-width: $fullhd - 1px)
+	@content
+
+=fullhd
+	@media screen and (min-width: $fullhd)
+	@content
+
+// -webkit-transition: all .3s;
+//   -moz-transition: all .3s;
+//   -ms-transition: all .3s;
+//   -ms-transition: all .3s;
+//   transition: all .3s;  
+//   backface-visibility:hidden;
+//   -webkit-backface-visibility:hidden; /* Chrome and Safari */
+//   -moz-backface-visibility:hidden; /* Firefox */
+//   -ms-backface-visibility:hidden; /* 

@@ -1,0 +1,29 @@
+.listing
+	width: 100%
+	.package
+		width: 100%
+		overflow: hidden
+		+animate(all, .5s)
+		background-size: cover
+		background-position: center
+		a
+			+animate(all, .3s)
+			.package-text-wrapper
+				height: 277px
+				h2
+					top: 65%
+					+animate(all, .5s)
+				.the-excerpt
+					font-weight: 300
+					top: 60%
+					+animate(all, .5s)
+					opacity: 0
+			&:hover
+				background-color: rgba(0,0,0 ,.6)
+				h2
+					transform: translateY(-100%)
+				.the-excerpt
+					transform: translateY(18%)
+					opacity: 1
+		&:hover
+			background-position: right
