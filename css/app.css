@@ -2478,7 +2478,7 @@
     color: rgba(255, 255, 255, 0.9);
     font-weight: 400;
     font-size: 0.9rem;
-    font-family: "Century Gothic", montserrat, Helvetica, Arial, sans-serif; }
+    font-family: "Century Gothic", "Raleway", montserrat, Arial, Helvetica, sans-serif; }
   .navbar-kisima .navbar-nav .nav-item.active {
     background-color: #fff; }
     .navbar-kisima .navbar-nav .nav-item.active .nav-link {
@@ -2494,7 +2494,7 @@
     padding: 0.5rem 1rem;
     padding-right: 0;
     border-radius: 0;
-    font-family: "Century Gothic", montserrat, Helvetica, Arial, sans-serif;
+    font-family: "Century Gothic", "Raleway", montserrat, Arial, Helvetica, sans-serif;
     background-color: transparent; }
   .kisima-search-frm .field .btn {
     background-color: transparent;
@@ -2531,7 +2531,7 @@
   text-decoration: underline; }
 
 .font-gothic {
-  font-family: "Century Gothic", montserrat, Helvetica, Arial, sans-serif; }
+  font-family: "Century Gothic", "Raleway", montserrat, Arial, Helvetica, sans-serif; }
 
 .font-raleway {
   font-family: "Raleway"; }
@@ -2579,12 +2579,12 @@
   background-color: #517fa4; }
 
 h2 {
-  font-family: "Century Gothic", montserrat, Helvetica, Arial, sans-serif; }
+  font-family: "Century Gothic", "Raleway", montserrat, Arial, Helvetica, sans-serif; }
 
 .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
   font-weight: 500;
   color: #333;
-  font-family: "Century Gothic", montserrat, Helvetica, Arial, sans-serif; }
+  font-family: "Century Gothic", "Raleway", montserrat, Arial, Helvetica, sans-serif; }
 .entry-content h2 {
   font-size: 1.5rem; }
 .entry-content strong, .entry-content b {
@@ -2896,7 +2896,7 @@ body {
 
 .why-us .title {
   font-size: 1rem;
-  font-family: "Century Gothic", montserrat, Helvetica, Arial, sans-serif; }
+  font-family: "Century Gothic", "Raleway", montserrat, Arial, Helvetica, sans-serif; }
 .why-us .uo-list {
   padding-bottom: 1rem;
   list-style: none; }
@@ -3014,7 +3014,7 @@ body {
   margin-bottom: 1.5rem;
   color: #969696;
   font-weight: 500;
-  font-family: "Century Gothic", montserrat, Helvetica, Arial, sans-serif; }
+  font-family: "Century Gothic", "Raleway", montserrat, Arial, Helvetica, sans-serif; }
 
 .kisima-article {
   -webkit-transition: all 1s ease;
@@ -3307,7 +3307,7 @@ body {
     border: 0;
     border-radius: 20px;
     font-size: 0.8rem;
-    font-family: "Century Gothic", montserrat, Helvetica, Arial, sans-serif;
+    font-family: "Century Gothic", "Raleway", montserrat, Arial, Helvetica, sans-serif;
     margin-bottom: 0.5rem;
     background-color: rgba(255, 255, 255, 0.8);
     resize: none; }

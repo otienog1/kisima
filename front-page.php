@@ -17,14 +17,9 @@
 
 get_header(); ?>
 
-<!-- <section class="hero-section p-rel">
-	<video src="<?php echo get_template_directory_uri() . '/vid/bg-male-lion.mp4'; ?>" class="p-abs w-100" autoplay loop></video>
-	<div class="hero-overlay p-abs w-100"></div>
-	<div class="site-title p-abs text-center">
-		<h1>Kisima Tours & Safaris.</h1>
-		<h2>The Source of Adventure</h2>
-	</div>
-</section> -->
+<section class="hero-section p-rel">
+	
+</section>
 <?php //layerslider(1) ?>
 
 		<?php

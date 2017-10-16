@@ -6,6 +6,7 @@
  */
 
 require_once get_template_directory() . "/inc/kisima-theme-options.php";;
+require_once get_template_directory() . "/inc/slider.php";;
 require_once get_template_directory() . "/inc/videos.php";;
 
 // $current_user = wp_get_current_user();
